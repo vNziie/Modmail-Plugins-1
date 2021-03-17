@@ -11,7 +11,7 @@ class SlowMode(commands.Cog):
     @commands.command()
     @checks.has_permissions(PermissionLevel.MODERATOR)
     async def slowmode(self, ctx, time, channel: discord.TextChannel = None):
-        """Set a slowmode to a channel
+        """💬 Set a slowmode to a channel
         It is not possible to set a slowmode longer than 6 hours
         """
         if not channel:
